@@ -1,0 +1,298 @@
+/*======================== Global ==========================*/
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.shazam {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: #2d2b2c;
+}
+
+.shazam .container .phone-box {
+    width: 320px;
+    height: 650px;
+    overflow: hidden;
+    border-radius: 40px;
+    background: #2d2b2c;
+    box-shadow: 14px 14px 39px #1f1e1e, -14px -14px 39px #3b383a;
+}
+
+h2.left {
+    font-size: 50px;
+    position: absolute;
+    left: 10px;
+    color: white;
+    font-family: Poppins;
+    font-style: italic;
+}
+
+h2.right {
+    font-size: 50px;
+    position: absolute;
+    right: 38px;
+    color: #028eff;
+    font-family: Fira code iScript;
+    font-style: italic;
+}
+
+h2.right span {
+    border: 1px solid #028eff;
+    padding: 20px;
+}
+
+h2.right span:nth-child(1) {
+    border: none;
+    background-color: #ff4602;
+    color: #1f1e1e;
+}
+
+h2.right span:nth-child(2) {
+    border: none;
+    background-color: #028dffaf;
+    color: #fff;
+}
+
+/*======================== End Global ==========================*/
+
+/*======================== Header ==========================*/
+
+.phone-box .head {
+    display: flex;
+    flex: 1;
+    flex-shrink: 1;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 320px;
+    height: 50px;
+    background: #2d2b2c;
+    padding: 20px 40px;
+    border-radius: 40px;
+}
+
+.head img {
+    width: 8px;
+}
+
+.music-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background-color: #028eff;
+    border: 5px solid #323332;
+    border-radius: 50%;
+    border-radius: 163px;
+    box-shadow: 12px 12px 22px #121112, -12px -12px 22px #484546;
+}
+
+.dots {
+    display: flex;
+    gap: 10px;
+}
+
+.dots p {
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    border: 3px solid #323332;
+    border-radius: 163px;
+    box-shadow: 12px 12px 22px #121112, -12px -12px 22px #484546;
+}
+
+.dots p.active {
+    width: 5px;
+    height: 5px;
+    background-color: #028eff;
+    border-radius: 163px;
+    box-shadow: 12px 12px 22px #121112, -12px -12px 22px #484546;
+}
+
+/*======================== End Header ==========================*/
+
+/*======================== Main ==========================*/
+
+main {
+    max-width: 320px;
+    min-height: calc(100% - 110px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+main h2 {
+    margin: 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+main .logo {
+    width: 150px;
+    height: 150px;
+    border: 15px solid #2d2b2c;
+    border-radius: 50%;
+    border-radius: 163px;
+    box-shadow: 12px 12px 22px #121112, -12px -12px 22px #484546;
+}
+
+main .logo img {
+    width: 100%;
+}
+
+main .icon {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #028eff;
+    border: 3px solid #323332;
+    border-radius: 50%;
+    border-radius: 163px;
+    box-shadow: 12px 12px 22px #121112, -12px -12px 22px #484546;
+}
+
+main .icon i {
+    color: #fff;
+}
+
+/*======================== End Main ==========================*/
+
+/*======================== Footer ==========================*/
+
+footer {
+    max-width: 320px;
+    height: 30px;
+}
+
+footer p {
+    margin: 0 auto;
+    width: 130px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.425);
+}
+
+/*======================== END Footer ==========================*/
+
+/*======================== GLASSMORPHISM ==========================*/
+
+.container.glass {
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: url(https://static.vecteezy.com/system/resources/previews/002/071/522/non_2x/abstract-blue-and-pink-gradient-shapes-rounded-line-background-vector.jpg)
+        no-repeat center center fixed;
+}
+
+.shazam .container .phone-box.glass {
+    width: 320px;
+    height: 650px;
+    overflow: hidden;
+    border-radius: 40px;
+    background: rgb(143 187 253 / 50%);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    box-shadow: 0 0 0 #919191, 0 0 0 #ffffff;
+}
+
+.phone-box.glass .head {
+    display: flex;
+    flex: 1;
+    flex-shrink: 1;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 320px;
+    height: 50px;
+    padding: 20px 40px;
+    border-radius: 40px;
+    background: none;
+}
+
+.glass .music-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background-color: #028eff;
+    border: 5px solid #ffffff8a;
+    border-radius: 50%;
+    border-radius: 163px;
+    box-shadow: 12px 12px 22px #ffffff52, -12px -12px 50px #ffffffa8;
+}
+
+.glass .dots p {
+    width: 5px;
+    height: 5px;
+    background-color: rgba(255, 249, 249, 0.596);
+    border: 3px solid #ffffffa8;
+    border-radius: 163px;
+    box-shadow: 5px 5px 10px #ffffff52, -5px -5px 10px #ffffffa8;
+}
+
+.glass .dots p.active {
+    width: 5px;
+    height: 5px;
+    background-color: #028eff;
+    border-radius: 163px;
+    box-shadow: 5px 5px 10px #ffffff52, -5px -5px 10px #ffffffa8;
+}
+
+.glass main h2 {
+    margin: 0;
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.glass main .logo {
+    width: 150px;
+    height: 150px;
+    border: 15px solid #ffffff8a;
+    border-radius: 50%;
+    border-radius: 163px;
+    box-shadow: 5px 5px 10px #ffffff52, -5px -5px 10px #ffffffa8;
+}
+
+.glass main .icon {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #028eff;
+    border: 3px solid #ffffff8a;
+    border-radius: 50%;
+    border-radius: 163px;
+    box-shadow: 12px 12px 50px #ffffff52, -12px -12px 50px #ffffffa8;
+}
+
+.glass footer p {
+    margin: 0 auto;
+    width: 130px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.425);
+}
